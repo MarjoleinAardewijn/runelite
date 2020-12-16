@@ -38,7 +38,6 @@ import static org.mockito.Mockito.verify;
 
 public class DiscordClickTest
 {
-	// Arrange
 	@Mock
 	private NavigationButton testDiscordButton;
 
@@ -47,11 +46,12 @@ public class DiscordClickTest
 
 	@Before
 	public void before() {
+		// Arrange
 		MockitoAnnotations.initMocks(this);
 	}
 
 	@Test
-	public void testNavigationButton()
+	public void testNavigationButtonClick()
 	{
 		// Arrange
 		testDiscordButton.setOnClick(() -> LinkBrowser.browse(RuneLiteProperties.getDiscordInvite()));
