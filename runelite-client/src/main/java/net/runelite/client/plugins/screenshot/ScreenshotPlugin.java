@@ -567,7 +567,7 @@ public class ScreenshotPlugin extends Plugin
 		takeScreenshot(fileName, screenshotSubDir);
 	}
 
-	private void manualScreenshot()
+	public void manualScreenshot()
 	{
 		takeScreenshot("", null);
 	}
