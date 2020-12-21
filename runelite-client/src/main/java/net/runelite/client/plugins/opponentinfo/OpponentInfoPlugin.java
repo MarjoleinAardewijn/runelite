@@ -74,7 +74,7 @@ public class OpponentInfoPlugin extends Plugin
 	@Inject
 	private PlayerComparisonOverlay playerComparisonOverlay;
 
-	@Getter(AccessLevel.PACKAGE)
+	@Getter(AccessLevel.PUBLIC)
 	private HiscoreEndpoint hiscoreEndpoint = HiscoreEndpoint.NORMAL;
 
 	@Getter(AccessLevel.PACKAGE)
